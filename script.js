@@ -2,12 +2,16 @@
 //a.) let obj1 = {name:"Person 1", age:5}
 //b.) let obj2 = {age:5, name:"Person 1"}
 
-// let obj1 = {name:"Person 1", age:5};
-// let obj2 = {age:5, name:"Person 1"};
-// //var result1 = JSON.loads(obj1);
-// //var result2 = JSON.loads(obj2);
-// var difference = isEquals(obj1,obj2)
-// console.log(difference);
+let obj1 = {name:"Person 1", age:5};
+let obj2 = {age:5, name:"Person 1"};
+var result1 = JSON.stringify(obj1);
+var result2 = JSON.stringify(obj2);
+if(result1 == result2){
+    console.log("Both are equal");
+}
+else{
+    console.log("Not equal");
+}
 
 //Question 2 : Use the rest countries' API URL ->https://restcountries.com/v3.1/all
 //and display all the countries flags in the console.
